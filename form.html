@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Job Application Form</title>
+</head>
+<body>
+    <form action="submit" method="post">
+        <fieldset>
+            <legend><h1>Personal Information</h1></legend>
+            <label for="name">Full Name:</label>
+            <input type="text" name="name" id="name" placeholder="FullName" min="3 characters" required><br><br>
+            <label for="Mail">Email:</label>
+            <input type="email" name="mail" id="mail" placeholder="Email Address" required><br><br>
+            <label for="phone">Phone Number:</label>
+            <input type="tel" name="phone" id="phone" placeholder="Tel" pattern="id{0-9} {10}" title="enter a 10-digit number" required><br><br>
+            <label for="Address">Address:</label>
+            <input type="text" name="Address" id="Address" placeholder="Home Address"><br><br>
+            <label for="DOB">Date Of Birth:</label>
+            <input type="date" name="DOB" id="DOB"><br><br>
+            <label for="gender">Gender:</label>
+            <input type="radio" name="gender" id="gender" value="Male">Male
+            <input type="radio" name="gender" id="gender" value="Female">Female
+        </fieldset>
+        <fieldset>
+            <legend> <h1>Education</h1></legend>
+            <label for="Degree">Degree:</label>
+            <input type="radio" name="Degree" id="Degree" value="Bsc">Bsc <br>
+             <input type="radio" name="Degree" id="Degree" value="SSCE">SSCE <br>
+             <input type="radio" name="Degree" id="Degree" value="HND">HND <br>
+             <input type="radio" name="Degree" id="Degree" value="Phd"> Phd <br><br>
+             <label for="school">Institutions:</label>
+             <input type="text" name="school" id="school" placeholder="School"><br><br>
+             <label for="date">Date Attended:</label>
+             <input type="date" name="date" id="date">
+        </fieldset>
+        <fieldset>
+            <legend><h1>Work Experience</h1></legend>
+            <label for="job">Job Title:</label>
+            <input type="radio" name="job" id="job" value="Customer Care">Customer Care <br>
+            <input type="radio" name="job" id="job" value="Personal Assistant">Personal Assistant <br>
+            <input type="radio" name="job" id="job" value="Community manager">Community manager <br>
+            <input type="radio" name="job" id="job" value="moderator"> Moderator <br>
+            <input type="text" name="job" id="job" placeholder="Other"><br><br>
+            <label for="company">Company Name:</label>
+            <input type="text" name="Company Name" id="name"><br>  <br>       
+               <label for="Key">Key Achievement:</label>      
+             <textarea style="resize: none;" name="key" id="key" cols="30" rows="4"></textarea><br><br>
+             </fieldset>
+             <fieldset>
+                <legend><h1>Job information</h1></legend>
+            <label for="post">Position Applied:</label>
+            <select name="position applied" id="position applied" required>
+                <option value="">Select Position</option>
+                <option value="Frontend developer">Frontend Developer</option>
+                <option value="Backend">Backend Developer</option>
+                <option value="Full Stack ">Full Stack Developer</option>
+            </select><br><br>
+            <label for="date">Preferred Interview Date:</label>
+            <input type="datetime-local" name="date" id="date"><br><br>
+            <label for="letter">Cover Letter:</label>
+            <textarea style="resize: none;" name="letter" id="letter" cols="40" rows="10"></textarea>
+        </fieldset>
+
+        <fieldset>
+            <legend><h1> Skills</h1></legend>
+            <label for="Skills">Skills:</label>
+            <input type="checkbox" name="Skills" id="Skills" value="communication">communication <br>
+         <input type="checkbox" name="Skills" id="Skills" value="Team work">Team work <br>
+            <input type="checkbox" name="Skills" id="Skills" value="Critical Thinker">Critical Thinker <br>
+            <input type="checkbox" name="Skills" id="Skills" value="Problem Solving">Problem Solving <br>
+             <input type="checkbox" name="Skills" id="Skills" value="Adptative">Adptative
+            
+            </fieldset>
+            <fieldset>
+                <legend><h1>Reference </h1></legend>
+                <label for="name">Name:</label>
+                <input type="text" name="name" id="name" placeholder="Reference Name"><br><br>
+                <label for="mail">Email:</label>
+                <input type="email" name="email" id="email" placeholder="Reference Email"><br><br>
+                <label for="occupation">Occupation:</label>
+                <input type="text" name="occupation" id="occupation"><br><br>
+                <label for="phone">TEL:</label>
+                <input type="tel" name="phone" id="phone">
+            </fieldset><br><br>
+        <fieldset>
+            <label for="resume">Upload Resume</label>
+            <input type="file" name="resume" id="resume" accept=".pdf"><br><br>
+            <input type="checkbox" name="" id="" required>
+            <label for="">I confirm that the above informations are correct</label>
+        </fieldset>
+        <input type="submit">
+            
+    </form>
+    
+    
+
+
+</body>
+</html>
